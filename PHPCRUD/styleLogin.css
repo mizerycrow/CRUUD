@@ -1,0 +1,139 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+html{
+    height:100%;
+}
+
+body{
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,84,117,1) 23%, rgba(0,212,255,1) 100% );
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 50px;
+        background:rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+
+}
+
+.container h2{
+    text-align: center;
+    color: white;
+    padding:0;
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+
+
+}
+
+.container .caixa_usuario{
+    position: relative;
+}
+
+ .caixa_usuario input{
+     width: 100%;
+     padding: 10px 0 ;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}
+
+.caixa_usuario label{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10px 0 ;
+    font-size: 16px;
+    color: white;
+    transition: 0.5;
+    pointer-events: none;
+}
+
+.caixa_usuario input:focus ~ label,
+.caixa_usuario input:valid ~ label{
+    color:#03e9f4;
+    left: 0;
+    top: -20px;
+    font-size: 12px;
+    transition: 0.25s;
+}
+
+.esqueceu_senha a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+}
+
+.esqueceu_senha a:hover{
+    color: #03e9f4;
+    transition: 0.5s;
+}
+
+.enviar a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: auto;
+    left:33%;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.enviar a:hover{
+    background: #03e9f4;
+    transition: 0.5s;
+    color: white;
+     border-radius: 2px;
+     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+    
+}
+.enviar a span {
+    position: absolute;
+    display: block;
+
+}
+
+hr.solid {
+    border-bottom: 1px  white;
+    padding-right:100px;
+    padding-left: 100px;
+}
+
+ .footer a{
+    position: relative;
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    left: 15%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+ }
+
+ .footer a:hover{
+    background: #c81912;
+    transition: 0.5s;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #c81912,0 0 25px #c81912 , 0 0 50px #c81912 , 0 0 100px #c81912;
+
+   
+
+ }
